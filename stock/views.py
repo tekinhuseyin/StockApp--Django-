@@ -36,8 +36,8 @@ class FirmView(viewsets.ModelViewSet):
     # permission_classes= [IsAdminUser] 
     # permission_classes= [IsAdminOrReadOnly]
     #
-    def firms(request, pk):
-        firms=Firm.objects.all(id=pk)
+    def firms(request):
+        firms=Firm.objects.all()
         context={
         'firms':firms
     }
