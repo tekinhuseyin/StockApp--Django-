@@ -1,6 +1,7 @@
 from django.urls import path,include
 from .views import *
 from rest_framework import routers
+
   # 'PurchaseView' adını doğru şekilde içe aktardığınızdan emin olun
 router=routers.DefaultRouter()
 router.register("purchase",PurchaseView)
